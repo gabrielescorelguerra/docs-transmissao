@@ -48,10 +48,6 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           routeBasePath: '/changelog/',
@@ -85,9 +81,9 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: 'Transmissão',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Logo Verbo da Vida',
           src: 'img/logo.svg',
         },
         items: [
@@ -112,16 +108,16 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Tutoriais',
                 to: '/',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Comunidade',
             items: [
               {
-                label: 'Stack Overflow',
+                label: 'Grupo de Whatsapp',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
               {
@@ -148,7 +144,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Docs Transmissão. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

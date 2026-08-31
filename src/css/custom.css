@@ -5,28 +5,167 @@
  */
 
 /* You can override the default Infima variables here. */
+/*  DISCORD
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #5865f2;
+  --ifm-color-primary-dark: #4752c4;
+  --ifm-color-primary-darker: #3f49b5;
+  --ifm-color-primary-darkest: #353d99;
+  --ifm-color-primary-light: #6974f5;
+  --ifm-color-primary-lighter: #7a84f7;
+  --ifm-color-primary-lightest: #9aa2fa;
+
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(88, 101, 242, 0.08);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+// Tema escuro
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #7289da;
+  --ifm-color-primary-dark: #6377c4;
+  --ifm-color-primary-darker: #5c70b8;
+  --ifm-color-primary-darkest: #4a5b96;
+  --ifm-color-primary-light: #8498e3;
+  --ifm-color-primary-lighter: #91a3e8;
+  --ifm-color-primary-lightest: #b0bdf0;
+
+  --docusaurus-highlighted-code-line-bg: rgba(114, 137, 218, 0.15);
 }
+*/
+
+/* Tokyo night */
+:root {
+  --ifm-color-primary: #7aa2f7;
+  --ifm-color-primary-dark: #5f8df2;
+  --ifm-color-primary-darker: #4f81f0;
+  --ifm-color-primary-darkest: #2860dc;
+  --ifm-color-primary-light: #95b6fb;
+  --ifm-color-primary-lighter: #a5c2fc;
+  --ifm-color-primary-lightest: #c5d9fe;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(122, 162, 247, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #7aa2f7;
+  --ifm-color-primary-dark: #5f8df2;
+  --ifm-color-primary-darker: #4f81f0;
+  --ifm-color-primary-darkest: #2860dc;
+  --ifm-color-primary-light: #95b6fb;
+  --ifm-color-primary-lighter: #a5c2fc;
+  --ifm-color-primary-lightest: #c5d9fe;
+
+  --ifm-background-color: #1a1b26;
+  --ifm-background-surface-color: #24283b;
+
+  --ifm-navbar-background-color: #16161e;
+  --ifm-footer-background-color: #16161e;
+
+  --ifm-font-color-base: #c0caf5;
+  --ifm-font-color-secondary: #a9b1d6;
+
+  --docusaurus-highlighted-code-line-bg: rgba(122, 162, 247, 0.15);
+}
+
+/* Sidebar */
+[data-theme='dark'] .theme-doc-sidebar-container {
+  background-color: #16161e;
+}
+
+/* Navbar */
+[data-theme='dark'] .navbar {
+  background-color: #16161e;
+}
+
+/* Cards e caixas */
+[data-theme='dark'] .card {
+  background-color: #24283b;
+  border-color: #3b4261;
+}
+
+/* Blocos de código */
+[data-theme='dark'] pre {
+  background-color: #16161e;
+}
+
+/* FOOTER */
+
+/* ===== LIGHT ===== */
+
+[data-theme='light'] .footer {
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  color: #4b5563;
+}
+
+[data-theme='light'] .footer__title {
+  color: #1f2937;
+}
+
+[data-theme='light'] .footer__link-item {
+  color: #4b5563;
+}
+
+[data-theme='light'] .footer__link-item:hover {
+  color: #34548a;
+}
+
+[data-theme='light'] .footer__copyright {
+  color: #9ca3af;
+}
+
+
+/* ===== DARK / TOKYO NIGHT ===== */
+
+[data-theme='dark'] .footer {
+  background-color: #1a1b26;
+  border-top: 1px solid #292e42;
+  color: #a9b1d6;
+}
+
+[data-theme='dark'] .footer__title {
+  color: #c0caf5;
+}
+
+[data-theme='dark'] .footer__link-item {
+  color: #a9b1d6;
+}
+
+[data-theme='dark'] .footer__link-item:hover {
+  color: #7aa2f7;
+}
+
+[data-theme='dark'] .footer__copyright {
+  color: #565f89;
+}
+
+/* ===== TIP — TOKYO NIGHT PINK ===== */
+
+.alert--success {
+  --ifm-alert-background-color: #fce4e8;
+  --ifm-alert-background-color-highlight: #fbd5dc;
+  --ifm-alert-border-color: #f7768e;
+  --ifm-alert-foreground-color: #5a2832;
+}
+
+/* Dark mode */
+[data-theme='dark'] .alert--success {
+  --ifm-alert-background-color: #2a1f2a;
+  --ifm-alert-background-color-highlight: #332332;
+  --ifm-alert-border-color: #f7768e;
+  --ifm-alert-foreground-color: #c0caf5;
+}
+
+/* Título e ícone */
+.alert--success .admonition-heading h5,
+.alert--success .admonition-icon {
+  color: #f7768e;
+}
+
+
+
+
+
 
 @import '@fortawesome/fontawesome-free/css/all.min.css';
