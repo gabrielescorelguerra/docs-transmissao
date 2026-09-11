@@ -1,0 +1,51 @@
+## Ethernet
+
+Esta área reúne as configurações utilizadas para conectar a câmera à rede.
+
+### Pattern
+
+Define como o endereço da câmera será configurado.
+
+* **STATIC** — o endereço da câmera é definido manualmente e permanece o mesmo, até que seja alterado.
+* **DHCP** — o endereço é definido automaticamente pelo roteador ou servidor da rede.
+
+### MAC Address
+
+É um **identificador único da conexão de rede da câmera**. Cada equipamento possui um endereço MAC próprio.
+
+### IP Version
+
+Define a versão do sistema de endereçamento utilizada pela câmera.
+
+* **IPv4** — utiliza endereços no formato `192.168.0.123`.
+* **IPv6** — utiliza um formato de endereço maior, desenvolvido para permitir uma quantidade muito maior de endereços.
+
+### IP Address
+
+É o **endereço da câmera dentro da rede**. É esse endereço que normalmente é utilizado para acessar a câmera pelo navegador.
+
+Exemplo:
+
+`192.168.0.123`
+
+### Subnet Mask
+
+Define **qual parte do endereço IP pertence à rede** e qual parte identifica os equipamentos dentro dela.
+
+Em redes comuns, um valor frequente é:
+
+`255.255.255.0`
+
+### Default Gateway
+
+Indica o **equipamento utilizado como saída da rede**, normalmente o roteador.
+
+Ele permite que a câmera se comunique com equipamentos que estão fora da sua rede local.
+
+### Preferred DNS
+
+Indica o **servidor responsável por encontrar endereços na internet**. É utilizado quando a câmera precisa acessar serviços usando nomes de endereço.
+
+### Alternate DNS
+
+É um **servidor DNS alternativo**. Pode ser utilizado caso o servidor definido como principal não esteja disponível.
