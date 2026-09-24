@@ -1,0 +1,77 @@
+# Configurações de vídeo
+
+A câmera possui dois fluxos de vídeo: **Main Stream** e **Sub Stream**. Cada um pode ser configurado de forma independente de acordo com a finalidade de uso.
+
+## Main Stream
+
+O **Main Stream** é o fluxo principal da câmera, normalmente utilizado quando é necessária a maior qualidade de imagem disponível.
+
+### Enable
+
+Ativa ou desativa o fluxo de vídeo.
+
+### Stream Type
+
+Define o tipo de fluxo de vídeo utilizado pela câmera.
+
+**Normal:** utiliza o fluxo de vídeo normalmente.
+
+### Compressed
+
+Define o **codec de vídeo** utilizado para comprimir a imagem.
+
+As opções disponíveis são:
+
+* **H.264** — oferece ampla compatibilidade com dispositivos e softwares.
+* **H.265** — proporciona uma compressão mais eficiente, reduzindo o bitrate necessário para uma qualidade semelhante ao H.264.
+
+### Resolution
+
+Define a resolução do vídeo.
+
+Opções disponíveis:
+
+* **4K**
+* **1080p**
+* **720p**
+
+Quanto maior a resolução, maior o nível de detalhes da imagem e, normalmente, maior a necessidade de processamento e bitrate.
+
+### BP Frame
+
+Define a estrutura de quadros utilizada na codificação do vídeo.
+
+**Single P frame:** utiliza um único quadro P entre os quadros de referência.
+
+### Frame Rate
+
+Define a quantidade de quadros por segundo (**FPS**) que serão gerados pelo fluxo.
+
+Quanto maior o FPS, mais fluida será a movimentação, mas maior será o consumo de processamento e bitrate.
+
+### Rate Control
+
+Define como o bitrate será controlado.
+
+* **CBR (Constant Bit Rate):** mantém o bitrate aproximadamente constante.
+* **VBR (Variable Bit Rate):** permite que o bitrate varie de acordo com a complexidade da imagem.
+
+### Bit Rate
+
+Define a quantidade de dados utilizada para transmitir o vídeo, geralmente expressa em **Kb/s**.
+
+Um bitrate maior pode proporcionar maior qualidade de imagem, mas também aumenta o consumo de rede.
+
+### IFrame Interval
+
+Define o intervalo entre os **I-Frames** do vídeo.
+
+O I-Frame é um quadro completo da imagem utilizado como referência para a reconstrução dos demais quadros. O intervalo entre eles influencia a qualidade, o consumo de dados e a facilidade de recuperação do vídeo em determinadas situações.
+
+---
+
+## Sub Stream
+
+O **Sub Stream** é um fluxo secundário, geralmente configurado com uma resolução e bitrate menores que o Main Stream.
+
+Ele pode ser utilizado quando não é necessária a qualidade máxima da câmera, reduzindo o consumo de rede e processamento.
